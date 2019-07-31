@@ -191,7 +191,7 @@ LOGGING = {
 # 设置admin上传配置
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
+FILE_UPLOAD_PERMISSIONS = 0o644    # 增加media上传权限的问题
 
 # 设置session
 # 配置session,如果用root需要先本地运行一下，然后将session权限设置开，这样才可以用
